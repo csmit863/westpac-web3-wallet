@@ -7,10 +7,10 @@ import HomePage from './popup/Homepage'; // Import the HomePage component
 import TransactionPending from './popup/TransactionPending'; // Import the TransactionPending component
 
 function IndexPopup() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
+  const [isLoggedIn, setIsLoggedIn] = useState(true); // State to track login status
   const [hasAccount, setHasAccount] = useState(true); // State to track account existence
   const [balance, setBalance] = useState(243.5); 
-  const [transaction_pending, setTransactionPending] = useState(false);
+  const [transaction_pending, setTransactionPending] = useState(true);
 
   const handleLogin = (pin: string) => {
     // Placeholder for actual login logic
